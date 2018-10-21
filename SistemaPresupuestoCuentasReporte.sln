@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaPresupuestoCuentasReporte", "SistemaPresupuestoCuentasReporte\SistemaPresupuestoCuentasReporte.csproj", "{396434BD-9ADF-499D-8A68-CF22F669E3CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaPresupuestoCuentasReporteTests", "SistemaPresupuestoCuentasReporteTests\SistemaPresupuestoCuentasReporteTests.csproj", "{E7DCBF30-1292-4154-8DE9-76BE441ACE97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{396434BD-9ADF-499D-8A68-CF22F669E3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{396434BD-9ADF-499D-8A68-CF22F669E3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{396434BD-9ADF-499D-8A68-CF22F669E3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DCBF30-1292-4154-8DE9-76BE441ACE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DCBF30-1292-4154-8DE9-76BE441ACE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DCBF30-1292-4154-8DE9-76BE441ACE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DCBF30-1292-4154-8DE9-76BE441ACE97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

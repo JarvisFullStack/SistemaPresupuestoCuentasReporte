@@ -53,6 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\IRepository.cs" />
+    <Compile Include="BLL\PresupuestoRepositorio.cs" />
+    <Compile Include="BLL\RepositorioBase.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Cuenta.cs" />
+    <Compile Include="Entidades\Presupuesto.cs" />
+    <Compile Include="Entidades\TipoCuenta.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,9 +92,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-    <Folder Include="Entidades\" />
     <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
