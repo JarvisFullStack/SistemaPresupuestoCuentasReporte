@@ -22,5 +22,13 @@ namespace SistemaPresupuestoCuentasReporte.Entidades
             TipoId = 0;
             Monto = 0.0;
         }
+
+        public Cuenta(int Id, String Descripcion,int TipoId,double Monto)
+        {
+            this.Id = Id;
+            this.Descripcion = Descripcion;
+            this.TipoId = TipoId;
+            this.Monto = Monto;
+        }
     }
 }

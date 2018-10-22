@@ -1,6 +1,7 @@
 ﻿using SistemaPresupuestoCuentasReporte.BLL;
 using SistemaPresupuestoCuentasReporte.Entidades;
 using SistemaPresupuestoCuentasReporte.UI.FormBase;
+using SistemaPresupuestoCuentasReporte.UI.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace SistemaPresupuestoCuentasReporte.UI.Consultas
     public partial class ConsultaPresupuesto : ConsultaBase
     {
         PresupuestoRepositorio repositorio;
+        List<Presupuesto> lista;
         public ConsultaPresupuesto()
         {
             
@@ -32,7 +34,7 @@ namespace SistemaPresupuestoCuentasReporte.UI.Consultas
         {
             repositorio = new PresupuestoRepositorio();
             //Lista de presupuestos
-            var lista = new List<Presupuesto>();
+            lista = new List<Presupuesto>();
 
             if (CriterioTextBox.Text.Trim().Length > 0)
             {
@@ -79,6 +81,18 @@ namespace SistemaPresupuestoCuentasReporte.UI.Consultas
             }
             BaseDataGridView.DataSource = null;
             BaseDataGridView.DataSource = lista;
+        }
+
+        private void ImprimirButton_Click(object sender, EventArgs e)
+        {
+            if (lista.Count == 0)
+            {
+                MessageBox.Show("Imposible imprimir");
+                return;
+            }
+
+            ReporteViewer reporte = new ReporteViewer(lista);
+            reporte.ShowDialog();
         }
     }
 }

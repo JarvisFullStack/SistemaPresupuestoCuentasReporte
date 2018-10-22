@@ -41,6 +41,7 @@
             // ImprimirButton
             // 
             this.ImprimirButton.FlatAppearance.BorderSize = 0;
+            this.ImprimirButton.Click += new System.EventHandler(this.ImprimirButton_Click);
             // 
             // BuscarButton
             // 

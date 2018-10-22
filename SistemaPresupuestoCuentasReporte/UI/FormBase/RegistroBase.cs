@@ -52,6 +52,7 @@ namespace SistemaPresupuestoCuentasReporte.UI.Registros
 
         public void Limpiar(Control.ControlCollection Controls)
         {
+            errorProvider.Clear();
             foreach(Control control in Controls)
             {
                 if(control is GroupBox)
