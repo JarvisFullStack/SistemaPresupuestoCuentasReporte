@@ -1,5 +1,4 @@
-﻿using SistemaPresupuestoCuentasReporte.UI.Registros;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaPresupuestoCuentasReporte
+namespace SistemaPresupuestoCuentasReporte.UI.Registros
 {
-    public partial class Form1 : Form
+    public partial class RegistroTipoCuenta : RegistroBase
     {
-        public Form1()
+        public RegistroTipoCuenta()
         {
             InitializeComponent();
-            new RegistroCuenta().Show();
         }
     }
 }

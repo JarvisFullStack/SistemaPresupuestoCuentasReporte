@@ -68,6 +68,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\ConsultaPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaPresupuesto.Designer.cs">
+      <DependentUpon>ConsultaPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBase\ConsultaBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormBase\ConsultaBase.Designer.cs">
+      <DependentUpon>ConsultaBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBase\RegistroBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormBase\RegistroBase.Designer.cs">
+      <DependentUpon>RegistroBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroCuenta.Designer.cs">
+      <DependentUpon>RegistroCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroPresupuesto.Designer.cs">
+      <DependentUpon>RegistroPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroTipoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroTipoCuenta.Designer.cs">
+      <DependentUpon>RegistroTipoCuenta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,7 +113,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultaPresupuesto.resx">
+      <DependentUpon>ConsultaPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormBase\ConsultaBase.resx">
+      <DependentUpon>ConsultaBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormBase\RegistroBase.resx">
+      <DependentUpon>RegistroBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RegistroCuenta.resx">
+      <DependentUpon>RegistroCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\SistemaPresupuestoCuentasReporte.Entidades.Presupuesto.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,9 +141,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
+    <Folder Include="UI\Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
